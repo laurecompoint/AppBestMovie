@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RLG-UO-mdw">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BestMovie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="logobestmovie" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-RD-ThP">
+                                <rect key="frame" x="97" y="505.66666666666669" width="220" height="190.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qCr-RD-ThP" secondAttribute="height" multiplier="379:328" id="ba3-HA-LH7"/>
+                                    <constraint firstAttribute="width" constant="220" id="lYq-Bi-YQ4"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhm-3k-hUn" userLabel="Poster View" customClass="PosterView" customModule="BestMovie" customModuleProvider="target">
+                                <rect key="frame" x="103" y="73" width="208" height="304"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ogz-Xy-kEY">
+                                        <rect key="frame" x="10" y="10" width="188" height="284"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ogz-Xy-kEY" secondAttribute="trailing" constant="10" id="ACE-r7-6zM"/>
+                                    <constraint firstItem="Ogz-Xy-kEY" firstAttribute="leading" secondItem="qhm-3k-hUn" secondAttribute="leading" constant="10" id="CxB-y5-vaj"/>
+                                    <constraint firstItem="Ogz-Xy-kEY" firstAttribute="top" secondItem="qhm-3k-hUn" secondAttribute="top" constant="10" id="OBl-IK-ps5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ogz-Xy-kEY" secondAttribute="bottom" constant="10" id="U8b-bb-RMy"/>
+                                    <constraint firstAttribute="width" constant="208" id="VLU-Ux-tHO"/>
+                                    <constraint firstAttribute="height" constant="304" id="Zfq-hA-Vbt"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="Ogz-Xy-kEY" id="tTK-NA-KbL"/>
+                                    <outletCollection property="gestureRecognizers" destination="V7L-de-kYN" appends="YES" id="mgx-nS-7vH"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titre" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oim-c0-L3x">
+                                <rect key="frame" x="40" y="393" width="334" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swifte the poster to the right or left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lH-Yh-c0j">
+                                <rect key="frame" x="60" y="705" width="294" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41568627450980389" green="0.68627450980392157" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="qhm-3k-hUn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="Fyp-03-9lL"/>
+                            <constraint firstItem="qCr-RD-ThP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-40" id="KVf-OS-HDn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8lH-Yh-c0j" secondAttribute="trailing" constant="60" id="Smf-AT-j2H"/>
+                            <constraint firstItem="8lH-Yh-c0j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="U5d-EN-Nmq"/>
+                            <constraint firstItem="qhm-3k-hUn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UbI-Hj-Jnm"/>
+                            <constraint firstItem="8lH-Yh-c0j" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="aMo-4l-8ub"/>
+                            <constraint firstItem="qCr-RD-ThP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="byB-HI-Kcc"/>
+                            <constraint firstItem="Oim-c0-L3x" firstAttribute="top" secondItem="qhm-3k-hUn" secondAttribute="bottom" constant="16" id="geQ-ng-HoL"/>
+                            <constraint firstItem="Oim-c0-L3x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="gpW-Zv-kHt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oim-c0-L3x" secondAttribute="trailing" constant="40" id="qvh-Ih-EVs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="26K-qR-ahO"/>
+                    <connections>
+                        <outlet property="movieTitleLabel" destination="Oim-c0-L3x" id="XXO-jd-R1K"/>
+                        <outlet property="posterView" destination="qhm-3k-hUn" id="qDz-gU-NkP"/>
+                        <segue destination="qBe-X7-1fq" kind="show" identifier="toContinuation" id="YKW-o0-wMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="V7L-de-kYN">
+                    <connections>
+                        <action selector="dragPosterView:" destination="BYZ-38-t0r" id="HDA-xu-tgd"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1110.144927536232" y="63.586956521739133"/>
+        </scene>
+        <!--Continuation View Controller-->
+        <scene sceneID="Poc-8E-wJr">
+            <objects>
+                <viewController id="qBe-X7-1fq" customClass="ContinuationViewController" customModule="BestMovie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lPO-Ba-lSG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="logobestmovie" translatesAutoresizingMaskIntoConstraints="NO" id="52v-nr-L9q">
+                                <rect key="frame" x="137" y="525" width="220" height="190.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="EaC-q4-4lt"/>
+                                    <constraint firstAttribute="width" secondItem="52v-nr-L9q" secondAttribute="height" multiplier="379:328" id="vRz-sY-XT4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your best movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhl-9A-hoj">
+                                <rect key="frame" x="115" y="65" width="185" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="BMColor"/>
+                        <constraints>
+                            <constraint firstItem="52v-nr-L9q" firstAttribute="width" secondItem="52v-nr-L9q" secondAttribute="height" multiplier="379:328" id="HJP-fZ-h0E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zgf-vc-LDZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQh-dJ-WMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763.7681159420292" y="63.586956521739133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0nR-UX-5gH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="RLG-UO-mdw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DAn-bI-leQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YnN-Dn-Whu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dR3-it-JA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202.89855072463769" y="63.586956521739133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logobestmovie" width="273" height="229"/>
+        <namedColor name="BMColor">
+            <color red="0.41568627450980394" green="0.68627450980392157" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
