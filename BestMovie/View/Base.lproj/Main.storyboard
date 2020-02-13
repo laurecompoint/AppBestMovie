@@ -101,13 +101,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="logobestmovie" translatesAutoresizingMaskIntoConstraints="NO" id="52v-nr-L9q">
-                                <rect key="frame" x="137" y="525" width="220" height="190.33333333333331"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="EaC-q4-4lt"/>
-                                    <constraint firstAttribute="width" secondItem="52v-nr-L9q" secondAttribute="height" multiplier="379:328" id="vRz-sY-XT4"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your best movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhl-9A-hoj">
                                 <rect key="frame" x="115" y="65" width="185" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -117,9 +110,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="BMColor"/>
-                        <constraints>
-                            <constraint firstItem="52v-nr-L9q" firstAttribute="width" secondItem="52v-nr-L9q" secondAttribute="height" multiplier="379:328" id="HJP-fZ-h0E"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zgf-vc-LDZ"/>
                     </view>
                 </viewController>
