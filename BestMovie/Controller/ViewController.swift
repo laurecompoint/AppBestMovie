@@ -116,7 +116,7 @@ class ViewController: UIViewController {
             movieTitleLabel.text = choice.currentMovie.title
         case .over:
             posterView.poster = Data()
-             performSegue(withIdentifier: "toContinuation", sender: nil)
+             performSegue(withIdentifier: "toResult", sender: nil)
             movieTitleLabel.text = ""
             
             

@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="logobestmovie" translatesAutoresizingMaskIntoConstraints="NO" id="IgW-0g-ZxT">
-                                <rect key="frame" x="71" y="334" width="273" height="229"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="78M-5R-3Fb">
+                                <rect key="frame" x="75" y="337" width="284" height="222"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -34,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logobestmovie" width="273" height="229"/>
+        <image name="logo" width="284" height="222"/>
     </resources>
 </document>

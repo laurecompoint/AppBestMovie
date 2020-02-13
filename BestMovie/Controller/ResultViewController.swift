@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContinuationViewController: UIViewController {
+class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
